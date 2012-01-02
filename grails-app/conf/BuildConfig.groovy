@@ -2,6 +2,8 @@ grails.servlet.version = "2.5" // Change depending on target container complianc
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
+grails.project.target.level = 1.6
+grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.project.dependency.resolution = {
@@ -35,9 +37,9 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        compile ":hibernate:$grailsVersion"
-        compile ":jquery:1.6.1.1"
-        compile ":resources:1.0.2"
+        runtime ":hibernate:$grailsVersion"
+        runtime ":jquery:1.7.1"
+        runtime ":resources:1.1.5"
 
         build ":tomcat:$grailsVersion"
     }
