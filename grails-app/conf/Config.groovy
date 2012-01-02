@@ -63,7 +63,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "http://empty-leaf-185.herokuapp.com/"
+        grails.serverURL = "http://empty-leaf-185.herokuapp.com"
     }
 }
 
